@@ -16,7 +16,7 @@ else
 fi
 
 # Step 2: Ask for Grafana Cloud API key and save it as an environment variable
-read -sp "Enter your Grafana Cloud API key: " grafana_api_key
+read -p "Enter your Grafana Cloud API key: " grafana_api_key
 echo
 export GCLOUD_RW_API_KEY="$grafana_api_key"
 
