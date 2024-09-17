@@ -28,10 +28,10 @@ GCLOUD_SCRAPE_INTERVAL="60s" \
 GCLOUD_HOSTED_LOGS_URL="https://logs-prod-020.grafana.net/loki/api/v1/push" \
 GCLOUD_HOSTED_LOGS_ID="998198" \
 GCLOUD_RW_API_KEY="$GCLOUD_RW_API_KEY" \
-/bin/sh -c "$(curl -fsSL https://storage.googleapis.com/cloud-onboarding/alloy/scripts/install-linux-binary.sh)"
+/bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/KazamiHazaki/alloy-cloud-grafana/refs/heads/main/alloy-installer.sh)"
 
 # Step 4: Create or update the config.alloy file
-cat <<EOF > /path/to/config.alloy
+cat <<EOF > config.alloy
 discovery.relabel "integrations_node_exporter" {
   targets = prometheus.exporter.unix.integrations_node_exporter.targets
 
