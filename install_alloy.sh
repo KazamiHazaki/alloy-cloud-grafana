@@ -8,7 +8,7 @@ current_hostname=$(hostname)
 echo "Current hostname is: $current_hostname"
 read -p "Do you want to use this hostname? (yes/no): " use_default
 
-if [ "$use_default" != "yes" ]; then
+if [ "$use_default" != "yes" ] then
     read -p "Enter new hostname: " new_hostname
     export HOSTNAME_ENV="$new_hostname"
 else
