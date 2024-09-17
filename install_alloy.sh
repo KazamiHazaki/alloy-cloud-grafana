@@ -2,7 +2,7 @@
 
 # Step 0: Create the directory
 mkdir -p monitoring-vm
-
+cd monitoring-vm
 # Step 1: Read current VM hostname and store it as an environment variable
 current_hostname=$(hostname)
 echo "Current hostname is: $current_hostname"
