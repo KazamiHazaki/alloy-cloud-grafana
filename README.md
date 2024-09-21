@@ -48,5 +48,4 @@ Copy the token started with glc.....
 
 Answer the question that asksed, and paste Token Grafana Cloud
 
-![image](https://github.com/user-attachments/assets/cefc6194-6341-4ae1-8363-39c897038a18)
 
